@@ -78,7 +78,7 @@ body {
     background: #4c3f35;
 }
 #home {
-    position: relative; /* Untuk memastikan overlay berada di dalam #home */
+    position: relative; 
 }
 
 #home .overlay {
@@ -87,21 +87,21 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Warna hitam transparan */
-    z-index: 1; /* Overlay berada di bawah teks */
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1; 
 }
 
 #home .container {
-    position: relative; /* Supaya konten berada di atas overlay */
-    z-index: 2; /* Prioritas lebih tinggi untuk konten */
-    color: white; /* Teks tetap putih */
+    position: relative; 
+    z-index: 2; 
+    color: white; 
 }
 #home {
-    background-image: url('contoh11.png'); /* Masukkan path gambar */
-    background-size: cover; /* Agar gambar menyesuaikan ukuran container */
-    background-position: center; /* Pusatkan gambar */
-    background-repeat: no-repeat; /* Hindari pengulangan gambar */
-    color: white; /* Teks menjadi putih untuk kontras */
+    background-image: url('contoh11.png'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    color: white; 
     text-align: center;
     padding: 100px 20px;
 }
@@ -113,17 +113,17 @@ body {
     font-size: 2rem;
 }
 .gallery-grid {
-    display: flex; /* Ubah menjadi fleksibel */
-    overflow-x: auto; /* Tambahkan scroll horizontal */
-    gap: 15px; /* Jarak antar gambar */
-    scroll-snap-type: x mandatory; /* Tambahkan efek snap */
+    display: flex;
+    overflow-x: auto; 
+    gap: 15px; 
+    scroll-snap-type: x mandatory;
     padding: 10px 0;
 }
 
 .gallery-item {
-    flex: 0 0 auto; /* Supaya gambar tetap pada ukuran aslinya */
-    width: 250px; /* Batasi lebar gambar */
-    scroll-snap-align: center; /* Efek snap ke tengah */
+    flex: 0 0 auto; 
+    width: 250px; 
+    scroll-snap-align: center; 
 }
 .gallery-item img {
     width: 100%;
@@ -136,7 +136,7 @@ body {
 .pricing-card {
     background: #fff;
     padding: 20px;
-    text-align: left; /* Agar teks tidak center */
+    text-align: left; 
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
@@ -199,7 +199,7 @@ body {
 
 /* Details Hidden by Default */
 .details {
-    display: none; /* Hidden by default */
+    display: none; 
     margin-top: 10px;
     font-size: 0.85rem;
     color: #4c3f35;
@@ -230,7 +230,21 @@ body {
 .contact ul li a:hover {
     color: #837c71;
 }
-
+.contact ul li a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1rem;
+}
+.contact ul li a i {
+    font-size: 1.2rem;
+    color: #4c3f35;
+    transition: color 0.3s;
+}
+.contact ul li a i:hover {
+    color: #837c71;
+}
+    
 /* Footer */
 .footer {
     background: #ddd6c1;
@@ -240,14 +254,14 @@ body {
 }
 /* Modal Style */
 .modal {
-    display: none; /* Hidden by default */
+    display: none; 
     position: fixed; 
     top: 0;
     left: 0;
     width: 100%; 
     height: 100%; 
-    background-color: rgba(0, 0, 0, 0.5); /* Dimmed background */
-    z-index: 1000; /* Make it appear on top of other elements */
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1000; 
     justify-content: center;
     align-items: center;
 }
@@ -261,7 +275,7 @@ body {
     max-width: 500px;
     text-align: left;
     position: relative;
-    animation: fadeIn 0.3s ease; /* Animation for smooth appearance */
+    animation: fadeIn 0.3s ease;
 }
 
 /* Close Button */
