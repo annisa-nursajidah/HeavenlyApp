@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">HeavenlyApp</div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="overlay"></div>
+        <div class="container">
+            <h2>Welcome to HeavenlyApp</h2>
+            <a href="#contact" class="btn-primary">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h3>Testi HeavenlyApp</h3>
+            <div class="gallery-grid">
+                <div class="gallery-item"><img src="assets/contoh3.png" alt="Gallery 1"></div>
+                <div class="gallery-item"><img src="assets/contoh4.png" alt="Gallery 2"></div>
+                <div class="gallery-item"><img src="assets/contoh5.png" alt="Gallery 3"></div>
+                <div class="gallery-item"><img src="assets/contoh6.png" alt="Gallery 4"></div>
+                <div class="gallery-item"><img src="assets/contoh7.png" alt="Gallery 5"></div>
+                <div class="gallery-item"><img src="assets/contoh8.png" alt="Gallery 6"></div>
+                <div class="gallery-item"><img src="assets/contoh9.png" alt="Gallery 7"></div>
+                <div class="gallery-item"><img src="assets/contoh10.png" alt="Gallery 8"></div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Pricing Section -->
+   <section id="pricing" class="pricing">
+    <div class="container">
+        <h3 class="pricing-title">Our Pricing</h3>
+        <div class="pricing-cards">
+            <!-- Netflix Card -->
+            <div class="pricing-card">
+                <h4>Netflix Premium</h4>
+                <p>Mulai dari 10.000</p>
+                <button class="btn-detail" onclick="showDetails(this)">View Details</button>
+                <div class="details">
+                    <p>Harga:</p>
+                    <span>NETFLIX SHARING 1P1U</span>
+                    <span>Rp.3.000 = 1 Hari</span>
+                       <span>Rp.7.000 = 3 Hari</span> 
+                        <span>Rp.12.000 = 1 Minggu</span>
+                        <span>Rp.30.000 = 1 Bulan</span>
+                        <span>Rp.54.000 = 2 Bulan</span>
+                        <span>Rp.75.000 = 3 Bulan</span>
+                        <span>Rp.131.000 = 6 Bulan</span>
+                       <span>Rp.232.000 = 1 Tahun</span>
+
+                       <span>NETFLIX SHARING 1P2U</span>
+                      <span> Rp.10.000 = 1 Minggu</span>
+                       <span>Rp.17.000 = 1 Bulan</span>
+                       <span>Rp.30.000 = 2 Bulan</span>
+                       <span>Rp.41.000 = 3 Bulan</span>
+                       <span>Rp.70.000 = 6 Bulan</span>
+                       <span>Rp.117.000 = 1 Tahun</span>
+
+                       <span> NETFLIX PRIVATE [Akun Sendiri]</span>
+                       <span> Rp.148.000= 1 Bulan </span>
+                       <span>NETFLIX SHARING 1P1U ( VPN ) </span>   
+                        <span>Rp.14.000 = 1 Bulan</span>
+                        
+                          
+                        </span>
+                    <p>Features:</p>
+                    <span>✅ Full Garansi Sesuai Durasi</span>
+                    <span>✅ Resolusi Ultra HD 4K</span>
+                    <span>✅ Netflix Renewable</span>
+                    <span>✅ Support Di Semua Device</span>
+                    <span>✅ Fix Error 1x24 Jam </span>
+                    <span>✅ Akun Dari Seller</span>
+                    <span>✅ Free Request Pin & Nama</span>
+                </div>
+            </div>
+
+            <!-- Alight Motion Card -->
+            <div class="pricing-card">
+                <h4>Alight Motion</h4>      
+                <p>Mulai dari 5.000</p>
+                <button class="btn-detail" onclick="showDetails(this)">View Details</button>
+                <div class="details">
+                    <p>Harga:</p>
+                    <span>SHARING</span>
+                    <span>1 BULAN : 5.000</span>
+                    <span>PRIVATE LOGIN BIASA</span>
+                    <span>1 TAHUN : 10.000</span>
+                    <span>PRIVATE LOGIN GOOGLE</span>
+                    <span>1 TAHUN : 15.000</span>
+                    <p>Features:</p>
+                    <span>✅ Akun Seller</span>
+                    <span>✅ Garansi 6 Bulan</span>
+                    <span>✅ login google bisa akun sendiri</span>
+                </div>
+            </div>
+            <div class="pricing-card">
+                <h4>BSTATION</h4>
+                <p>Mulai dari 5.000</p>
+                <button class="btn-detail" onclick="showDetails(this)">View Details</button>
+                <div class="details">
+                    <p>Harga:</p>
+                    <span>SHARING</span>
+                    <span>1 BULAN : 5.000</span>
+                    <span>3 BULAN : Rp.8.000</span>
+                    <span>1 TAHUN : Rp.9.000</span>
+                    <span>PRIVATE</span>
+                    <span>1 BULAN : 33.000</span>
+                    <p>Features:</p>
+                    <span>✅ Akun Seller</span>
+                    <span>✅ Full Garansi sesuai s&k</span>
+                    <span>Ini Akun SHARING, jika terkena limit maklumi, opsi ketika limit bisa download terlebih dahulu</span>
+                </div>
+            </div>
+            <div class="pricing-card">
+                <h4>CAMSCANNER</h4>
+                <p>Mulai dari 9.000</p>
+                <button class="btn-detail" onclick="showDetails(this)">View Details</button>
+                <div class="details">
+                    <p>Harga:</p>
+                    <span>SHARING</span>
+                    <span>6 BULAN : Rp. 9.000</span>
+                    <span> 1 TAHUN  : Rp. 15.000</span>
+                    <p>Features:</p>
+                    <span>✅ Akun Seller</span>
+                    <span>✅ 1 tahun garansi 6 bulan</span>
+                </div>
+            </div>
+            <div class="pricing-card">
+                <h4>SPOTIFY PREMIUM</h4>
+                <p>Mulai dari Rp. 6.000</p>
+                <button class="btn-detail" onclick="showDetails(this)">View Details</button>
+                <div class="details">
+                    <p>Harga:</p>
+                    <span>FAMPLAND</span>
+                    <span>19 DAYS : 6.000</span>
+                    <span>1 BULAN : 16.000</span>
+                    <span>2 BULAN : 26.000</span>
+                    <span>3 BULAN : 37.000</span>
+                    <span>INDIVIDU</span>
+                    <span>1 Bulan  : 30.000</span>
+                    <span>2 Bulan NOGAR : 19.000</span>
+                    <span>2 Bulan FULLGAR : 30.000</span>
+                    <span>3 Bulan FULLGAR : 51.000</span>
+                    <p>Features:</p>
+                    <span>✅BISA AKUN SENDIRI </span>
+                    <span>✅ Full Garansi sesuai s&k</span>
+                    <span>✅REGION INDO </span>
+                    <span>❗TANYA STOK DLUUU</span>
+                </div>
+            </div>
+            <div class="pricing-card">
+                <h4>DISNEY+ HOTSTAR</h4>
+                <p>Mulai dari Rp. 3.000</p>
+                <button class="btn-detail" onclick="showDetails(this)">View Details</button>
+                <div class="details">
+                    <p>Harga:</p>
+                    <span>SHARING 6U</span>
+                    <span>1 Hari: Rp.3.000 </span>
+                    <span>2 Hari : Rp.5.000 </span>
+                    <span>3 Hari : Rp.6.000 </span>
+                    <span>5 Hari : Rp.6.000 </span>
+                    <span>1 Minggu  : Rp.13.000 </span>
+                    <span>1  Bulan: Rp.22.000 </span>
+                    <span>2 Bulan: Rp.40.000 </span>
+                    <span>3 Bulan: Rp.55.000 </span>
+                    <span>6 Bulan: Rp.100.000  </span>
+                    <p>Features:</p>
+                    <span>✅Plan premium </span>
+                    <span>✅Bisa perpanjangan setiap bulan</span>
+                    <span>✅3 screen  </span>
+                    <span>✅Anti ke logout</span>
+                    <span>❗TANYA STOK DLUUU</span>
+                </div>
+            </div>
+            <div class="pricing-card">
+                <h4>VIU PREMIUM</h4>
+                <p>Mulai dari Rp. 1.000</p>
+                <button class="btn-detail" onclick="showDetails(this)">View Details</button>
+                <div class="details">
+                    <p>Harga:</p>
+                    <span>HARIAN</span>
+                    <span>1 Days : Rp.1.000</span>
+                    <span>3 Days : Rp.2.000</span>
+                    <span>3 Days : Rp.2.000</span>
+                    <span>PRIVATE</span>
+                    <span>1 Bulan : Rp.5.000</span>
+                    <span>2 Bulan : Rp.6.000</span>
+                    <span>3 Bulan : Rp.8.000</span>
+                    <span>7 Bulan : Rp.9,000</span>
+                    <span>12 Bulan : Rp.10,000</span>
+                    <span>VIU PLUS+</span>
+                    <span>1 Bulan Sharing : Rp. 11.000</span>
+                    <p>Features:</p>
+                    <span>✅Akun dari seller </span>
+                    <span>✅ Full Garansi sesuai s&k</span>
+                    <span>❗TANYA STOK DLUUU</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h3>Contact Us</h3>
+            <ul>
+                <li><a href="https://www.instagram.com/heavenlyapp?igsh=ODh0bWIzNmVlcmU4" target="_blank">Instagram</a></li>
+                <li><a href="https://wa.me/6281914177468" target="_blank">WhatsApp</a></li>
+                <li><a href="https://tiktok.com" target="_blank">TikTok</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 HeavenlyApp. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+<script>
+    function showDetails(button) {
+        // Cari elemen 'details' terdekat dari tombol
+        const details = button.nextElementSibling;
+        if (details.style.display === "none" || !details.style.display) {
+            details.style.display = "block"; // Tampilkan detail
+            button.textContent = "Hide Details"; // Ubah teks tombol
+        } else {
+            details.style.display = "none"; // Sembunyikan detail
+            button.textContent = "View Details"; // Ubah kembali teks tombol
+        }
+    }
+</script>

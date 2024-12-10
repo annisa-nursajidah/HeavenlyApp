@@ -1,0 +1,308 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f7f0e8;
+    color: #4c3f35;
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+.header {
+    background: #ddd6c1;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.header .logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #4c3f35;
+    text-align: center;
+}
+.header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.header nav ul li a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #4c3f35;
+    transition: color 0.3s;
+}
+.header nav ul li a:hover {
+    color: #837c71;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('assets/hero.jpg') center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+.hero h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+.hero p {
+    margin-bottom: 20px;
+}
+.hero .btn-primary {
+    background: #837c71;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+.hero .btn-primary:hover {
+    background: #4c3f35;
+}
+#home {
+    position: relative; /* Untuk memastikan overlay berada di dalam #home */
+}
+
+#home .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Warna hitam transparan */
+    z-index: 1; /* Overlay berada di bawah teks */
+}
+
+#home .container {
+    position: relative; /* Supaya konten berada di atas overlay */
+    z-index: 2; /* Prioritas lebih tinggi untuk konten */
+    color: white; /* Teks tetap putih */
+}
+#home {
+    background-image: url('contoh11.png'); /* Masukkan path gambar */
+    background-size: cover; /* Agar gambar menyesuaikan ukuran container */
+    background-position: center; /* Pusatkan gambar */
+    background-repeat: no-repeat; /* Hindari pengulangan gambar */
+    color: white; /* Teks menjadi putih untuk kontras */
+    text-align: center;
+    padding: 100px 20px;
+}
+
+/* Gallery Section */
+.gallery h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+.gallery-grid {
+    display: flex; /* Ubah menjadi fleksibel */
+    overflow-x: auto; /* Tambahkan scroll horizontal */
+    gap: 15px; /* Jarak antar gambar */
+    scroll-snap-type: x mandatory; /* Tambahkan efek snap */
+    padding: 10px 0;
+}
+
+.gallery-item {
+    flex: 0 0 auto; /* Supaya gambar tetap pada ukuran aslinya */
+    width: 250px; /* Batasi lebar gambar */
+    scroll-snap-align: center; /* Efek snap ke tengah */
+}
+.gallery-item img {
+    width: 100%;
+    height: 500px; 
+    object-fit: cover;
+    border-radius: 10px; 
+    display: block;
+}
+/* Pricing Section */
+.pricing-card {
+    background: #fff;
+    padding: 20px;
+    text-align: left; /* Agar teks tidak center */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 300px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.pricing-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+.pricing-card h4 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #4c3f35;
+}
+.pricing-card p {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #837c71;
+    margin-bottom: 5px;
+}
+.pricing-card span {
+    font-size: 0.85rem;
+    color: #4c3f35;
+    line-height: 1.6;
+    display: block;
+    margin-bottom: 10px;
+}
+.pricing-card span:last-child {
+    margin-bottom: 0;
+}
+.pricing-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+}
+/* Pricing Title Center */
+.pricing-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+/* Button for Details */
+.btn-detail {
+    background-color: #837c71;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 10px;
+}
+.btn-detail:hover {
+    background-color: #4c3f35;
+}
+
+/* Details Hidden by Default */
+.details {
+    display: none; /* Hidden by default */
+    margin-top: 10px;
+    font-size: 0.85rem;
+    color: #4c3f35;
+    line-height: 1.6;
+}
+
+
+/* Contact Section */
+.contact {
+    text-align: center;
+    padding: 40px 0;
+}
+.contact h3 {
+    margin-bottom: 10px;
+}
+.contact ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.contact ul li a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #4c3f35;
+    transition: color 0.3s;
+}
+.contact ul li a:hover {
+    color: #837c71;
+}
+
+/* Footer */
+.footer {
+    background: #ddd6c1;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9rem;
+}
+/* Modal Style */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.5); /* Dimmed background */
+    z-index: 1000; /* Make it appear on top of other elements */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Modal Content */
+.modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    text-align: left;
+    position: relative;
+    animation: fadeIn 0.3s ease; /* Animation for smooth appearance */
+}
+
+/* Close Button */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #4c3f35;
+    transition: color 0.3s;
+}
+.close:hover {
+    color: #837c71;
+}
+
+/* Modal Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .header .logo {
+        font-size: 1.5rem;
+    }
+    .header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .hero h2 {
+        font-size: 2rem;
+    }
+    .pricing-card {
+        width: 90%;
+    }
+}
