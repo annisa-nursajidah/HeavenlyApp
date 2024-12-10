@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Website</title>
     <link rel="stylesheet" href="assets/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
 </head>
 <body>
     <!-- Header -->
@@ -32,22 +34,7 @@
         </div>
     </section>
 
-    <!-- Gallery Section -->
-    <section id="gallery" class="gallery">
-        <div class="container">
-            <h3>Testi HeavenlyApp</h3>
-            <div class="gallery-grid">
-                <div class="gallery-item"><img src="assets/contoh3.png" alt="Gallery 1"></div>
-                <div class="gallery-item"><img src="assets/contoh4.png" alt="Gallery 2"></div>
-                <div class="gallery-item"><img src="assets/contoh5.png" alt="Gallery 3"></div>
-                <div class="gallery-item"><img src="assets/contoh6.png" alt="Gallery 4"></div>
-                <div class="gallery-item"><img src="assets/contoh7.png" alt="Gallery 5"></div>
-                <div class="gallery-item"><img src="assets/contoh8.png" alt="Gallery 6"></div>
-                <div class="gallery-item"><img src="assets/contoh9.png" alt="Gallery 7"></div>
-                <div class="gallery-item"><img src="assets/contoh10.png" alt="Gallery 8"></div>
-            </div>
-        </div>
-    </section>
+    
 
    <!-- Pricing Section -->
    <section id="pricing" class="pricing">
@@ -222,19 +209,35 @@
         </div>
     </div>
 </section>
-
+<!-- Gallery Section -->
+<section id="gallery" class="gallery">
+    <div class="container">
+        <h3>Testi HeavenlyApp</h3>
+        <div class="gallery-grid">
+            <div class="gallery-item"><img src="assets/contoh3.png" alt="Gallery 1"></div>
+            <div class="gallery-item"><img src="assets/contoh4.png" alt="Gallery 2"></div>
+            <div class="gallery-item"><img src="assets/contoh5.png" alt="Gallery 3"></div>
+            <div class="gallery-item"><img src="assets/contoh6.png" alt="Gallery 4"></div>
+            <div class="gallery-item"><img src="assets/contoh7.png" alt="Gallery 5"></div>
+            <div class="gallery-item"><img src="assets/contoh8.png" alt="Gallery 6"></div>
+            <div class="gallery-item"><img src="assets/contoh9.png" alt="Gallery 7"></div>
+            <div class="gallery-item"><img src="assets/contoh10.png" alt="Gallery 8"></div>
+        </div>
+    </div>
+</section>      
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
             <h3>Contact Us</h3>
             <ul>
-                <li><a href="https://www.instagram.com/heavenlyapp?igsh=ODh0bWIzNmVlcmU4" target="_blank">Instagram</a></li>
-                <li><a href="https://wa.me/6281914177468" target="_blank">WhatsApp</a></li>
-                <li><a href="https://tiktok.com" target="_blank">TikTok</a></li>
+                <li><a href="https://www.instagram.com/heavenlyapp?igsh=ODh0bWIzNmVlcmU4" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+                <li><a href="https://wa.me/6281914177468" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+                <li><a href="https://tiktok.com" target="_blank"><i class="fab fa-tiktok"></i> TikTok</a></li>
             </ul>
         </div>
     </section>
+    
 
     <!-- Footer -->
     <footer class="footer">
@@ -244,14 +247,14 @@
 </html>
 <script>
     function showDetails(button) {
-        // Cari elemen 'details' terdekat dari tombol
+        
         const details = button.nextElementSibling;
         if (details.style.display === "none" || !details.style.display) {
-            details.style.display = "block"; // Tampilkan detail
-            button.textContent = "Hide Details"; // Ubah teks tombol
+            details.style.display = "block";
+            button.textContent = "Hide Details"; 
         } else {
-            details.style.display = "none"; // Sembunyikan detail
-            button.textContent = "View Details"; // Ubah kembali teks tombol
+            details.style.display = "none"; 
+            button.textContent = "View Details"; 
         }
     }
 </script>
